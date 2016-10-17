@@ -1,4 +1,4 @@
-extern void init_scmd();
+#include "all.h"
 
 void setup (){
 	init_scmd();

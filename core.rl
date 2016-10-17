@@ -1,3 +1,4 @@
+#include "all.h"
 %%{
 	machine core;
 	main := "";

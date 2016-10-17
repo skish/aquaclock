@@ -15,3 +15,4 @@ RSWITCH = -G2
 	ragel $(RSWITHC) -o $@ $<
 
 
+$(OBJDIR)/atimer.o $(OBJDIR)/scmd.o: all.h
