@@ -1,3 +1,4 @@
+// serial line 
 #include <avr/io.h>
 #include "all.h"
 
@@ -8,7 +9,7 @@
 
 %% write data;
 
-uint8_t cs;
+static uint8_t cs;
 
 void init_scmd(){
 %% write init;
