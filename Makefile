@@ -37,5 +37,6 @@ defs.h : defs.rh defs.rl
 test: test.o $(OBJDIR)/core.o
 	g++ $(CXXFLAGS) -o $@ $^
 
+test.o : defs.h
 
 
