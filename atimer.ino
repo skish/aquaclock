@@ -1,11 +1,8 @@
 #include "all.h"
+#include <avr/common.h>
 
 int pin_map[n_pins] = {1, 2, 3, 4, 5};
 
-corecmd next_core_cmd;
-void send_to_core (corecmd c) {
-	next_core_cmd = c;
-}
 
 clockcmd next_clock_cmd;
 void send_to_clock (clockcmd c) {
@@ -25,3 +22,10 @@ void setup (){
 void loop() {
 }
 
+void WRZ() {
+  for (int i=0;i<n_pins;i++) digitalWrite(pin_map[i], LOW);
+}
+
+void WRO() {
+  for (int i=0;i<n_pins;i++) digitalWrite(pin_map[i], HIGH);
+}

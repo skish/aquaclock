@@ -1,4 +1,6 @@
-%%machine core;
-%%include "defs.rh";
-%%write exports;
-%%main := [];
+%%{
+machine core;
+include "defs.rh";
+write exports;
+main := [];
+}%%

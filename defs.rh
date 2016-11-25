@@ -1,3 +1,8 @@
-%%machine core;
-%%export wrie = 'W';
+%%{
+machine core;
+export write_pins = 'W';
+export turn_on = 'O';
+export off_all_zero = '0';
+export off_all_one  = '1';
+}%%
 
